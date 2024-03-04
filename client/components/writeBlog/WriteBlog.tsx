@@ -41,8 +41,9 @@ const WriteBlog = () => {
   };
 
   const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const file:any = e.target.files[0];
-    if (file) {
+    const files:any = e.target.files;
+    if (files && files.length > 0) { // Check if files is not null and has at least one file
+      const file: any = files[0];
       setSelectedImage(file);
       const reader = new FileReader();
       reader.onloadend = () => {
@@ -51,6 +52,19 @@ const WriteBlog = () => {
       reader.readAsDataURL(file);
     }
   };
+  
+
+  // const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
+  //   const file:any = e.target.files[0];
+  //   if (file) {
+  //     setSelectedImage(file);
+  //     const reader = new FileReader();
+  //     reader.onloadend = () => {
+  //       setImagePreview(reader.result as any);
+  //     };
+  //     reader.readAsDataURL(file);
+  //   }
+  // };
   
 
   const handleFormSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
