@@ -7,7 +7,7 @@ const Recent = () => {
         <p className="bg-gradient-to-r from-blue-400 via-[#0CB8DF] to-[#0CC9D6] text-transparent bg-clip-text text-4xl font-bold">
           Recent Posts
         </p>
-        <p className="text-[#7E9CC7]">Don't miss the latest trends</p>
+        <p className="text-[#7E9CC7]">Dont miss the latest trends</p>
       </div>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-3 my-8 md:w-[47rem] ">
         <div className="bg-[#E8EDF5] rounded-xl p-5 border border-blue-300 hover:border-white max-w-[370px]">
