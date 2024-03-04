@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WriteComment from "@/components/writeComments/WriteComment";
+// import WriteComment from "@/components/writeComments/WriteComment";
 
 const Recent = () => {
   return (
@@ -7,7 +7,7 @@ const Recent = () => {
     <div className="flex flex-col">
     <div className="flex flex-col text-left pt-10">
         
-        <WriteComment />
+        {/* <WriteComment /> */}
         <div className="bg-[rgb(232,237,245)] border border-slate-300 my-16"></div>
       
         <p className="text-4xl font-bold mt-10">
