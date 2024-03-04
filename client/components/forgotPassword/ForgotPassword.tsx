@@ -19,7 +19,7 @@ const ForgotPassword = () => {
       </form>
 
       <p className="signup-link-forgot">
-        Don't have an account?<Link href="/signup" className="signup-link-forgot link-forgot"> Sign up</Link>
+        Dont have an account?<Link href="/signup" className="signup-link-forgot link-forgot"> Sign up</Link>
       </p>
     </div>
   );
